@@ -2,31 +2,129 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body {
+  background-color: #f4f4f5;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fetch_navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #0984e3;
 }
 
-.App-link {
-  color: #61dafb;
+.feth_header {
+  background-color: #0984e3;
+  height: 90px;
+  color: #fff;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fetch_header_heading {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1.5%;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.fetch_form_input {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  height: 60px;
+  width: 18%;
+  border-bottom: 2px solid #0984e3;
+  text-decoration: none;
+  outline: none;
+  font-size: 1.1vw;
+  background: #f4f4f5;
+  letter-spacing: 0.2em;
+  margin-top: 4%;
+}
+
+.fetch_form_input:focus {
+  border-bottom: 5px solid #0984e3;
+  -webkit-transition: 0.2s all ease;
+  -o-mozkit-transition: 0.2s all ease;
+  transition: 0.2 s all ease;
+}
+
+.fetch_form {
+  position: relative;
+  text-align: center;
+}
+
+.fetch_form_button {
+  margin-top: 1%;
+  height: 60px;
+  width: 180px;
+  border: 2px solid #0984e3;
+  background-color: transparent;
+  color: #0984e3;
+  font-size: 1.1vw;
+  font-weight: 400;
+  outline: none;
+  margin-top: 2%;
+  letter-spacing: 0.1em;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2 s all ease-in-out;
+}
+
+.fetch_form_button:hover {
+  background: #0984e3;
+  color: #fff;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2 s all ease-in-out;
+}
+
+.fetch_users_image {
+  height: 350px;
+  width: 20%;
+  margin-top: 4%;
+}
+
+.fetch_users_name {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-top: 5px;
+}
+
+.fetch_users_bio {
+  font-size: 1.2vw;
+  color: #8a8686;
+  font-weight: 400;
+}
+
+.fetch_other_details {
+  list-style-type: none;
+  text-align: left;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  margin-top: 3%;
+}
+
+.fetch_other_details_list_item {
+  font-size: 1.3vw;
+  color: #8a8686;
+  text-align: left;
+  padding-top: 1%;
+}
+
+.fetch_other_details_list_item>span {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  letter-spacing: 0.1em;
 }

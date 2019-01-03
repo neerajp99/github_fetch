@@ -24,6 +24,19 @@ class App extends Component {
     });
     console.log(this.state.users);
   };
+  componentDidUpdate = () => {
+    const fetch_user = JSON.stringify(this.state.users);
+    localStorage.setItem("fetch_user", fetch_user);
+  }
+  componentDidMount = () => {
+    const local_data = localStorage.getItem("fetch_user");
+    const jsonParse = JSON.parse(local_data);
+    if(local_data){
+      this.setState({
+        users: jsonParse
+      })
+    }
+  }
 
   render() {
     return (
